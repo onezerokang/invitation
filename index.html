@@ -276,6 +276,11 @@
       window.addEventListener("load", () => {
         const badge = document.querySelector(".w-webflow-badge");
         badge.classList.remove("w-webflow-badge");
+        badge.removeAttribute("href");
+        while (badge.hasChildNodes()) {
+          badge.removeChild(badge.firstChild);
+        }
+        badge.remove();
       });
     </script>
   </body>
