@@ -61,6 +61,31 @@
         display: None !important;
         visibility: hidden !important;
       }
+      @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+      /* @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css); */
+
+      * {
+        font-family: "Noto Sans KR", sans-serif !important;
+      }
+
+      /* h1,
+      h2 {
+        font-family: "Nanum Myeongjo", serif !important;
+        font-weight: 900 !important;
+      } */
+
+      @font-face {
+        font-family: "HSBombaram3_Regular";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      h1,
+      h2 {
+        font-family: "HSBombaram3_Regular" !important;
+      }
     </style>
   </head>
   <body>
@@ -85,11 +110,11 @@
               rotateY(0) rotateZ(0) skew(0, 0);
             transform: translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0)
               rotateY(0) rotateZ(0) skew(0, 0);
-            font-size: 12vh;
+            font-size: 8vh;
           "
           class="main-h1 home"
         >
-          졸업식
+          3기 졸업식
         </h1>
       </a>
       <div class="w-nav-button"><div class="w-icon-nav-menu"></div></div>
@@ -119,15 +144,15 @@
                 rotateY(0) rotateZ(0) skew(0, 0);
               transform: translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0)
                 rotateY(0) rotateZ(0) skew(0, 0);
-              font-size: 12vh;
-              line-height: 12vh;
+              font-size: 5vh;
+              line-height: 8vh;
             "
             class="main-h1 home"
           >
-            Invitation,
+            초대합니다
           </h1>
         </div>
-        <div class="_w-h1">
+        <div class="_w-h1" style="padding-right: 0">
           <h1
             data-w-id="a5b9f386-66ee-dfd4-322d-966155820ac1"
             style="
@@ -139,12 +164,13 @@
                 rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
               transform: translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0)
                 rotateY(0) rotateZ(0) skew(0, 0);
-              font-size: 5vh;
-              line-height: 7vh;
+              font-size: 3vh;
+              line-height: 5vh;
             "
             class="main-h1 bold home"
           >
-            시간: 2022년 2월 26일(토) 11시~12시<br />
+            시간: 2022년 2월 26일(토)<br />
+            오전 11시~12시<br />
             장소: Place C
           </h1>
         </div>
@@ -174,15 +200,18 @@
         <div role="list" class="w-dyn-items">
           <div role="listitem" class="wrapper w-dyn-item">
             <div
-              style="background-image: url('./image/kim.jpg')"
+              style="background-image: url('./image/kim04.jpg')"
               class="column background-image"
             >
               <div class="column _100vh">
                 <div class="project-info">
-                  <div class="number"><h2 class="number zero">01</h2></div>
+                  <!-- <div class="number"><h2 class="number zero">01</h2></div> -->
                   <h2 class="project-title">마음, 김하늘</h2>
                   <p class="project-description">
-                    A dating app — for single socks.
+                    안녕하세요, 마음 김하늘입니다. 이번 졸업식을 통해
+                    내일학교에서의 시간을 되돌아보며 저희의 성장을 도와주신
+                    분들께 감사한 마음을 전하고 싶습니다. 많은 분들이
+                    참여해주셔서 자리를 빛내주시면 감사하겠습니다!
                   </p>
                 </div>
               </div>
@@ -190,16 +219,17 @@
           </div>
           <div role="listitem" class="wrapper w-dyn-item">
             <div
-              style="
-                background-image: url('https://assets.website-files.com/5b2a8f45ee96a605bc64fa2a/5b2aa6c65554a74ae32b4ee1_iGotchu%20_blankhand.jpeg');
-              "
+              style="background-image: url('./image/oh03.jpg')"
               class="column background-image"
             >
               <div class="column _100vh">
                 <div class="project-info">
-                  <div class="number"><h2 class="number zero">02</h2></div>
+                  <!-- <div class="number"><h2 class="number zero">02</h2></div> -->
                   <h2 class="project-title">새벽, 오선화</h2>
-                  <p class="project-description">An app that just gets you.</p>
+                  <p class="project-description">
+                    5년간의 여정을 마디맺음하는 자리에 함께 해 주신다면 기쁠 것
+                    같습니다. 더 밝게 빛날 새벽을 응원해주세요!
+                  </p>
                 </div>
               </div>
             </div>
@@ -211,10 +241,11 @@
             >
               <div class="column _100vh">
                 <div class="project-info">
-                  <div class="number"><h2 class="number zero">03</h2></div>
+                  <!-- <div class="number"><h2 class="number zero">03</h2></div> -->
                   <h2 class="project-title">꿈, 강원영</h2>
                   <p class="project-description">
-                    안녕하세요. 졸업을 하게 되었습니다. 감사하겠습니다.
+                    5년 동안 우여곡절 끝에 졸업을 하게 되었습니다. 성장에 도움을
+                    주신 모든 분들께 감사 인사를 드리고 싶습니다.
                   </p>
                 </div>
               </div>
@@ -236,7 +267,7 @@
               transform: translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0)
                 rotateY(0) rotateZ(0) skew(0, 0);
               font-size: 5vh;
-              line-height: 10vh;
+              line-height: 8vh;
             "
             class="main-h1 home"
           >
@@ -258,10 +289,24 @@
             <a class="footer-links">감사인사</a>
             <a class="footer-links">사진촬영</a>
           </div>
-          <p class="small-p" style="color: black">
-            졸업식을 마치고 포트럭이 있을 예정입니다. 3기 졸업생이 준비한 메뉴는
-            갈비찜, 치킨, 샐러드입니다. 함께... 하시는 분들은 준비해주시면
-            감사하겠습니다 ㅎ
+          <p
+            class="small-p"
+            style="
+              color: black;
+              font-size: 24px;
+              line-height: 32px;
+              max-width: 450px;
+            "
+          >
+            졸업식 이후에 포트럭이 있을 예정입니다. 3기 졸업생이 준비한 메뉴는
+            갈비찜, 치킨, 샐러드입니다. 참여하시는 분들은 아래 설문 링크로
+            들어가서 해당 내용을 작성해주시면 감사하겠습니다.
+            <a
+              style="font-size: 16px"
+              href="https://forms.gle/CTC3iV7fct2BvGUi9"
+            >
+              https://forms.gle/CTC3iV7fct2BvGUi9
+            </a>
           </p>
         </div>
       </div>
