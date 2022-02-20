@@ -55,6 +55,13 @@
       href="https://assets.website-files.com/img/webclip.png"
       rel="apple-touch-icon"
     />
+    <style>
+      ‍ .w-webflow-badge {
+        position: fixed !important;
+        display: None !important;
+        visibility: hidden !important;
+      }
+    </style>
   </head>
   <body>
     <div
@@ -272,16 +279,16 @@
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->
-    <script>
-      window.addEventListener("load", () => {
-        const badge = document.querySelector(".w-webflow-badge");
-        badge.classList.remove("w-webflow-badge");
-        badge.removeAttribute("href");
-        while (badge.hasChildNodes()) {
-          badge.removeChild(badge.firstChild);
-        }
-        badge.remove();
-      });
-    </script>
   </body>
+  <script defer>
+    window.addEventListener("load", () => {
+      const badge = document.querySelector(".w-webflow-badge");
+      badge.classList.remove("w-webflow-badge");
+      badge.removeAttribute("href");
+      while (badge.hasChildNodes()) {
+        badge.removeChild(badge.firstChild);
+      }
+      badge.remove();
+    });
+  </script>
 </html>
